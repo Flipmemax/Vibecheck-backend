@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const City = require("../models").city;
-const User = require("../models").User;
+const authMiddleware = require("../auth/middleware");
 const router = new Router();
 
 router.get("/", async (req, res, next) => {
@@ -12,7 +12,7 @@ router.get("/", async (req, res, next) => {
   }
 });
 
-router.post("/create", async (req, res, next) => {
+router.post("/create", authMiddleware, async (req, res, next) => {
   try {
     const { name, imgUrl, vidUrl, songUrl } = req.body;
     if (!name || !imgUrl || !vidUrl || !songUrl) {
