@@ -4,8 +4,8 @@ const authMiddleware = require("../auth/middleware");
 const router = new Router();
 
 router.get("/", async (req, res, next) => {
-  const limit = Math.min(9);
-  const offset = 0;
+  const limit = Math.min(req.query.limit || 9);
+  const offset = req.query.offset || 0;
   try {
     const cities = await City.findAndCountAll({
       limit,
