@@ -47,6 +47,15 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date(),
       },
+      {
+        name: "Los Angeles",
+        imgUrl:
+          "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/475000/475457-Los-Angeles.jpg",
+        vidUrl: "https://www.youtube.com/watch?v=25VUH95sMco",
+        songUrl: "https://www.youtube.com/watch?v=-5KAN9_CzSA",
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
     ]);
   },
 
