@@ -32,7 +32,7 @@ module.exports = {
       {
         name: "Paris",
         imgUrl:
-          "https://www.lastminutevakantievergelijk.nl/wp-content/uploads/2019/05/new-york.jpg",
+          "https://cdn.turkishairlines.com/m/536e8df8c381e006/original/Travel-Guide-of-Paris-via-Turkish-Airlines.jpg",
         vidUrl: "https://www.youtube.com/watch?v=yc2zOWit2NQ",
         songUrl: "https://www.youtube.com/watch?v=5yx6BWlEVcY",
         createdAt: new Date(),
@@ -41,7 +41,7 @@ module.exports = {
       {
         name: "Hong Kong",
         imgUrl:
-          "https://www.lastminutevakantievergelijk.nl/wp-content/uploads/2019/05/new-york.jpg",
+          "https://www.dhlexpress.nl/sites/default/files/styles/header_image_desktop/public/hong_kong_douane_informatie_dhl_express.jpg?itok=GOvrMGKZ&timestamp=1578307276",
         vidUrl: "https://www.youtube.com/watch?v=oAkCZbmFsU4",
         songUrl: "https://www.youtube.com/watch?v=-5KAN9_CzSA",
         createdAt: new Date(),
