@@ -13,7 +13,7 @@ module.exports = {
 		dialect: "mysql",
 	},
 	production: {
-		use_env_variable: "DATABASE_URL",
+		url: "postgres://vupwrpll:PXRrG9eApy0Q0TR4EtsEaSxLAK_CrSwK@hattie.db.elephantsql.com/vupwrpll",
 
 		dialectOptions: {
 			ssl: {
