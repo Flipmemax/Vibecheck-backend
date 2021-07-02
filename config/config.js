@@ -2,7 +2,7 @@ require("dotenv").config();
 
 module.exports = {
 	development: {
-		url: "process.env.DATABASE_URL",
+		url: "postgres://vupwrpll:PXRrG9eApy0Q0TR4EtsEaSxLAK_CrSwK@hattie.db.elephantsql.com/vupwrpll",
 		dialect: "postgres",
 	},
 	test: {
@@ -13,7 +13,8 @@ module.exports = {
 		dialect: "mysql",
 	},
 	production: {
-		use_env_variable: "process.env.DATABASE_URL",
+		use_env_variable: "DATABASE_URL",
+
 		dialectOptions: {
 			ssl: {
 				rejectUnauthorized: false,
@@ -21,3 +22,4 @@ module.exports = {
 		},
 	},
 };
+// console.log(process.env.DATABASE_URL);
