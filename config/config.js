@@ -13,8 +13,7 @@ module.exports = {
 		dialect: "mysql",
 	},
 	production: {
-		use_env_variable: process.env.ELEPHANT_SQL,
-		dialect: "postgres",
+		use_env_variable: "DATABASE_URL",
 		dialectOptions: {
 			ssl: {
 				rejectUnauthorized: false,
