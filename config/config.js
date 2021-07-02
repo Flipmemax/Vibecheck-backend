@@ -2,7 +2,7 @@ require("dotenv").config();
 
 module.exports = {
 	development: {
-		url: process.env.ELEPHANT_SQL,
+		url: "process.env.DATABASE_URL",
 		dialect: "postgres",
 	},
 	test: {
@@ -13,7 +13,7 @@ module.exports = {
 		dialect: "mysql",
 	},
 	production: {
-		use_env_variable: "process.env.ELEPHANT_SQL",
+		use_env_variable: "DATABASE_URL",
 		dialectOptions: {
 			ssl: {
 				rejectUnauthorized: false,
